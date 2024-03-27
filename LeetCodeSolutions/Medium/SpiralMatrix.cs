@@ -20,7 +20,6 @@ public class SpiralMatrixSolution
         {
             while (counter < totalItems)
             {
-                int currentElement = matrix[i][j];
                 visitedElements.Add(new Tuple<int, int>(i, j), true);
                 spiralMatrix.Add(matrix[i][j]);
                 counter++;
@@ -37,7 +36,6 @@ public class SpiralMatrixSolution
 
             while (counter < totalItems)
             {
-                int currentElement = matrix[i][j];
                 visitedElements.Add(new Tuple<int, int>(i, j), true);
                 spiralMatrix.Add(matrix[i][j]);
                 counter++;
@@ -54,7 +52,6 @@ public class SpiralMatrixSolution
 
             while (counter < totalItems)
             {
-                int currentElement = matrix[i][j];
                 visitedElements.Add(new Tuple<int, int>(i, j), true);
                 spiralMatrix.Add(matrix[i][j]);
                 counter++;
@@ -71,7 +68,6 @@ public class SpiralMatrixSolution
 
             while (counter < m * n)
             {
-                int currentElement = matrix[i][j];
                 visitedElements.Add(new Tuple<int, int>(i, j), true);
                 spiralMatrix.Add(matrix[i][j]);
                 counter++;
