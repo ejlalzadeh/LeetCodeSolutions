@@ -48,12 +48,7 @@ public class ValidateBinarySearchTreeSolution
             if (node.val >= max || node.val <= min)
                 return false;
 
-            bool result = Validate(node.left, node.val, min);
-
-            if (result)
-                result = Validate(node.right, max, node.val);
-
-            return result;
+            return Validate(node.left, node.val, min) && Validate(node.right, max, node.val);
         }
     }
 }
