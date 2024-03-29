@@ -35,6 +35,27 @@ public class ValidateBinarySearchTreeSolution
             return result;
         }
     }
+
+    public static bool IsValidBSTOthersSolution(TreeNode root)
+    {
+        return Validate(root, long.MaxValue, long.MinValue);
+
+        bool Validate(TreeNode? node, long max, long min)
+        {
+            if (node is null)
+                return true;
+
+            if (node.val >= max || node.val <= min)
+                return false;
+
+            bool result = Validate(node.left, node.val, min);
+
+            if (result)
+                result = Validate(node.right, max, node.val);
+
+            return result;
+        }
+    }
 }
 
 public class TreeNode
