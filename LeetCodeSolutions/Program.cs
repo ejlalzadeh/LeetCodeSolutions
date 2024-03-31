@@ -1,19 +1,10 @@
 ﻿using LeetCodeSolutions.Medium;
 
-var matrix = new int[][]
-{
-    new int[] {1, 3, 5,7},
-    new int[] {10,11,16,20},
-    new int[] {23,30,34,60}
-};
+ListNode head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
 
-var matrix2 = new int[][]
-{
-    new int[] {1, 3, 5},
-    new int[] {10,11,16},
-    new int[] {23,30,34}
-};
+ListNode head2 = new ListNode(1, new ListNode(2));
+
+Console.WriteLine(RemoveNthNodeFromEndOfListSolution.RemoveNthFromEnd(head2, 2));
 
 
-Console.WriteLine(SearchA2DMatrixSolution.SearchMatrix(matrix, 19));
-;
+
